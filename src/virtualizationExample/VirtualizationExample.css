@@ -1,0 +1,33 @@
+.virtualization-div {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.componentVirtualizationWrapper {
+  margin-top: 30px;
+  width: 50vw;
+}
+
+.random-div {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.even-random-div {
+  background-color: rgba(128, 128, 128, 0.575);
+}
+
+/* Gotcha about nth-child
+ * If you do this 1 it will change bg color of every div, but won't work at all with 1/nth child
+ * although there are multiple nth-children,
+ * but the problem is the way it is rendering
+ * if you see the render tree, every parent has only 1 .random-div
+ */
+.random-div:nth-child(2) {
+  background-color: rgba(128, 128, 128, 0.575);
+}

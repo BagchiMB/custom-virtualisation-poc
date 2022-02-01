@@ -1,0 +1,12 @@
+.virtualization-viewport {
+  overflow: auto;
+}
+
+.virtualization-wrapper {
+  position: relative;
+}
+
+.virtualization-wrapper .virtualized-div {
+  width: 100%;
+  position: absolute;
+}
